@@ -35,4 +35,6 @@ aiohttp
 python-math
 Pillow
 speedtest-cli
+cinemagoer
+git+https://github.com/Joelkb/cinemagoer
 
