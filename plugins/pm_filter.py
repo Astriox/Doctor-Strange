@@ -605,302 +605,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "about":
-
         buttons= [[
-
             InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', callback_data='gxneopm'),
-
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-
         ]]
-
         reply_markup = InlineKeyboardMarkup(buttons)
-
         await query.message.edit_text(
-
             text=script.OWNER_TXT,
-
-            reply_markup=reply_markup,
-
-            parse_mode='html'
-
-        )
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/CrazyDeveloperTG/Doctor-Strange'),
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SOURCE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "manuelfilter":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʙᴜᴛᴛᴏɴs', callback_data='button')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.MANUELFILTER_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "button":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='manuelfilter')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.BUTTON_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "autofilter":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.AUTOFILTER_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "coct":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CONNECTION_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "extra":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.EXTRAMOD_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "admin":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='extra')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ADMIN_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "song":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SONG_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "video":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.VIDEO_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "tts":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.TTS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "gtrans":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbotss'),
-            InlineKeyboardButton('𝙻𝙰𝙽𝙶 𝙲𝙾𝙳𝙴𝚂', url='https://cloud.google.com/translate/docs/languages')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GTRANS_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "tele":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.TELE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "corona":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CORONA_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "abook":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOOK_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "deploy":
-        buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/CrazyDeveloperTG/Doctor-Strange'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/aboutexinos')
-        ], [
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.DEPLOY_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "sticker":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.STICKER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "pings":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.PINGS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "json":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.JSON_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "urlshort":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.URLSHORT_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "whois":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.WHOIS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "font":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbotss')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.FONT_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "carb":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbotss')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CARB_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "fun":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='czdbots')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.FUN_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "stats":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "rfrsh":
-        await query.answer("𝙁𝙚𝙩𝙘𝙝𝙞𝙣𝙜 𝙈𝙤𝙣𝙜𝙤𝘿𝙗 𝘿𝙖𝙩𝙖𝘽𝙖𝙨𝙚")
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -995,7 +706,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🎭 [{get_size(file.file_size)}🔸 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"▫ {get_size(file.file_size)} ▸ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1008,37 +719,31 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🎭 {get_size(file.file_size)}🔸",
+                    text=f"{get_size(file.file_size)}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
             ]
             for file in files
         ]
+
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
+            InlineKeyboardButton(f'ɪɴꜰᴏ', 'movieinfo'),
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'movss'),
+            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'moviis')
         ]
-    )
-    btn.insert(1, 
-         [
-             InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'🔰 sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tinfo')
-         ]
     )
 
     if offset != "":
-        key = f"{message.chat.id}-{message.id}"
+        key = f"{message.chat.id}-{message.message_id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f" 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝓝𝓮𝔁𝓽 ⪼", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"),InlineKeyboardButton(text=f"1 - {math.ceil(int(total_results)/10)}", callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text=" 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1075,7 +780,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛʟᴇ : {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>Me</a>\n┗🍁 ᴀssɪsᴛ : <a href='https://t.me/Autofilter_vipBot'>ᴛᴇssᴀ</a>\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
+        cap = f"<b>🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Sᴘɪᴅᴇʀ Mᴀɴ](https://t.me/GxHeisenBot)\n┗ 🍁 ᴄʜᴀɴɴᴇʟ : [ᴍᴏᴠɪᴇs ᴄʟᴜʙ](https://t.me/MoviesClubPlus)\n\nᴀꜰᴛᴇʀ 30 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n<i>★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  [ᴄɪɴɪᴍᴀʙʀᴀɴᴛʜᴇɴ](https://t.me/Cinimabranthen)</i></b>"
     if imdb and imdb.get('poster'):
         try:
             pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
