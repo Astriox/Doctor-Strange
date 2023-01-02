@@ -13,8 +13,6 @@ wget
 aiofiles
 ffmpeg-python
 ffmpeg
-
-
 requests
 aiohttp==3.7.4
 gTTS
@@ -30,5 +28,7 @@ dnspython
 aiohttp
 python-math
 Pillow
+
+
 
 
